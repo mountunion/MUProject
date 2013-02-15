@@ -1,16 +1,16 @@
 # A better way to start your projects
 
-Introducing MU Project. If you're a CS/IS student at the University of Mount Union, use MU Project to quickly get up and running with a simple application. 
+CS/IS student at the University of Mount Union can use MU Project to get up and running quickly with a simple starter application. 
 
 ## MUPanel.java
 
-A simple Frame with several UI elements already hooked up for you. 
+Just a humble little Frame with several UI elements already hooked up. If you just want the Frame with nothing else, I've marked what to delete from the source code.  
 
 ![a simple frame](http://f.cl.ly/items/2I362P0M3z313z2e083G/mupanel.png)
 
 ## MetroButton.java
 
-A Metro-style subclass of JButton. They have a simple style, and nice aesthetic for any project. Also makes instantiating and customizing colors really easy. For instance: 
+A Metro-style subclass of JButton. With a simple style, they can bring a nice aesthetic to any project. Instantiating is super easy; just choose a title and background color (hex code or Color.Something) to get started. Metro Buttons also have a subtle hover effect, which darkens your background color to show focus. 
 
 ```java
 demoMetroButton = new MetroButton("I'm BLUE!", Color.decode("#71b3c7"));
@@ -21,8 +21,8 @@ this.add(demoMetroButton);
 
 ## Contribute / Problem? 
 
-Want to help contribute to MU Project? Just fork the project, make changes, and submit a pull request. I'll check for changes periodically. 
+I'd love to see MU Project grow into a rock solid set of sensible defaults for new Java projects. To help contribute, sign in with your GitHub account, fork the project, make changes, and submit a pull request. 
 
-If you've encountered a problem with the code, please [submit a new issue](https://github.com/dreger/mu-project/issues/new) and we can get working on it. 
+If you encounter a problem with any of the code please [submit a new issue](https://github.com/dreger/mu-project/issues/new) and we can get working on it right away. 
 
 You can reach me on Twitter [@dreger](http://twitter.com/dreger), or through email. 

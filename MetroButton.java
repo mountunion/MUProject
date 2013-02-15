@@ -1,4 +1,4 @@
-// Metro Buttons - to make JButtons suck less
+// Metro Buttons - to make JButtons look pretty
 // Hacked together with love by Kyle Dreger
 // Version: 1.0.0
 // URL: github.com/dreger/mu-project
