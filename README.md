@@ -1,6 +1,6 @@
 # A better way to start your projects
 
-Introducing the new MU Project. If you're a student at the University of Mount Union, this project folder will give you all the source code you need to get up and running with a simple JFrame and other simple elements. 
+Introducing MU Project. If you're a CS/IS student at the University of Mount Union, use MU Project to quickly get up and running with a simple application. 
 
 ## MUPanel.java
 
