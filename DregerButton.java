@@ -10,39 +10,26 @@ import java.awt.event.MouseListener;
 import javax.swing.JButton;
 
 public class DregerButton extends JButton implements MouseListener{
-    Font defaultFont = new Font("Gill Sans MT",Font.BOLD,14);
+    Font defaultFont = new Font("Gill Sans MT", Font.BOLD, 15);
     Color textColor = Color.decode("#ffffff");
-    Color backgroundColor = Color.decode("#000000");
-    Color hoverColor = Color.decode("#00aced");
-    
-    public DregerButton(String s) {
+    Color hoverColor;
+   
+    public DregerButton(String s, Color bg) {
         s = s.toUpperCase();
         this.setFocusPainted(false);
         this.setText(s);
         this.setBorder(null);
+        this.setBackground(bg);
+        this.setHoverColor(bg.darker());
         this.setForeground(textColor);
-        this.setBackground(backgroundColor);
+        this.hoverColor = bg.darker();
         this.setFont(defaultFont);
         this.setOpaque(true);
         addMouseListener(this);
     }
-    public DregerButton(String s, Color backgroundColor, Color hoverColor) {
-        s = s.toUpperCase();
-        this.setFocusPainted(false);
-        this.setText(s);
-        this.setBorder(null);
-        this.setHoverColor(hoverColor);
-        this.setBackground(backgroundColor);
-        this.setFont(defaultFont);
-        this.setOpaque(true);
-        addMouseListener(this);
-    }
-    
-    public void setBackgroundColor(Color color) {
-        backgroundColor = color; 
-    }
+
     public void setHoverColor(Color color) {
-        hoverColor = colorSubmitted; 
+        hoverColor = color; 
     }
 
     @Override public void mouseClicked(MouseEvent me) {}
@@ -50,16 +37,11 @@ public class DregerButton extends JButton implements MouseListener{
     @Override public void mousePressed(MouseEvent me) {}
     
     @Override
-    public void mouseEntered(MouseEvent e) { 
-        if (e.getSource()==this) {  
-            this.setBackground(this.hover_color); 
-        }
-    }
+    public void mouseEntered(MouseEvent e) { this.setBackground(this.hoverColor); }
     @Override
     public void mouseExited(MouseEvent e) { 
-        if (e.getSource()==this) { 
-            this.setBackground(this.backgroundColor); 
-        }
+        Color normalState = hoverColor.brighter();
+        this.setBackground(normalState); 
     }
 }
     
