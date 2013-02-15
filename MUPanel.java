@@ -7,10 +7,11 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class MUPanel extends JPanel implements ActionListener{
+public class MUPanel extends Frame implements ActionListener{
     String windowTitle = "Your Java Program";
-    JButton demoButton = new JButton("Click me!");
-    JLabel defaultLabel = new JLabel("Code is poetry.");
+    JLabel demoLabel;
+    JButton demoJButton;
+    DregerButton demoDregerButton, demoDregerButton2, demoDregerButton3;
     
     public MUPanel() {
         setLayout(null);
@@ -18,42 +19,55 @@ public class MUPanel extends JPanel implements ActionListener{
         setName(windowTitle);
         setBackground(Color.decode("#fafafa"));
 
-        // Remove the next three lines to clear the JPanel
-        defaultLabel.setBounds(50, 50, 200, 100);
+        // Remove the following lines to clear the JPanel
+        JLabel defaultLabel = new JLabel("Code is poetry.");
+        defaultLabel.setBounds(50, 50, 400, 100);
         defaultLabel.setFont(new Font("Georgia", Font.PLAIN, 35));
         this.add(defaultLabel);
 
-        // A demo button which, when clicked, outputs to the console
-        demoButton.setBounds(50, 150, 200, 100);
-        demoButton.setFont(new Font("Verdana", Font.PLAIN, 20));
-        demoButton.addActionListener(this);
-        this.add(demoButton);
+        // Demo button which, when clicked, outputs to the console
+        demoJButton = new JButton("Click me!");
+        demoJButton.setBounds(50, 150, 200, 50);
+        demoJButton.setFont(new Font("Verdana", Font.PLAIN, 20));
+        demoJButton.addActionListener(this);
+        this.add(demoJButton);
+        
+        // Demo DregerButtons
+        demoDregerButton = new DregerButton("I'm BLUE!", Color.decode("#71b3c7"));
+        demoDregerButton.setBounds(50, 220, 100, 50);
+        demoDregerButton.addActionListener(this);
+        this.add(demoDregerButton);
+        
+        demoDregerButton2 = new DregerButton("I'm RED!", Color.decode("#ce1611"));
+        demoDregerButton2.setBounds(170, 220, 100, 50);
+        this.add(demoDregerButton2);
+        
+        demoDregerButton3 = new DregerButton("I'm GREEN!", Color.decode("#8a9b2f"));
+        demoDregerButton3.setBounds(290, 220, 120, 50);
+        this.add(demoDregerButton3);
     }
-    
-    @Override
-    public void paintComponent(Graphics g) {
-        super.paintComponent(g);      
-    } 
 
     // Using an IF statement to determine the source of the event
     // allows us to have cleaner code when you start adding other
     // elements to the panel. 
+    @Override
     public void actionPerformed(ActionEvent event) {
         Object source = event.getSource();
-        if (source.equals(demoButton)) {
-            System.out.println("demoButton was clicked!");
+        if (source.equals(demoJButton)) {
+            System.out.println("demoJButton was clicked!");
+        }
+        if (source.equals(demoDregerButton)) {
+            System.out.println("demoDregerButton was clicked!");
         }
     }
 
-    public void frame() {
-        for (Component c: getComponents())
-            c.setSize(c.getPreferredSize());
-        JFrame f = new JFrame(getName());
-        f.setContentPane(this);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.pack();
-        f.setVisible(true);    
+    public static void main(String args[]){ 
+        Toolkit tk = Toolkit.getDefaultToolkit();
+        Dimension screenSize = tk.getScreenSize();
+        
+        MUPanel muPanel;
+        muPanel = new MUPanel();
+        muPanel.setBounds(100, 100, 800, 600);
+        muPanel.setVisible(true);
     }
-
-    public static void main(String args[]){ new MUPanel().frame(); }
 } // end class
