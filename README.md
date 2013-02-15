@@ -16,8 +16,10 @@ aButton.setBounds(10, 10, 140, 40);
 aButton.setHoverColor(Color.RED);
 ```
 
-## Contribute
+## Contribute / Problem? 
 
 Want to help contribute to MU Project? Just fork the project, make changes, and submit a pull request. I'll check for changes periodically. 
+
+If you've encountered a problem with the code, please [submit a new issue](https://github.com/dreger/mu-project/issues/new) and we can get working on it. 
 
 You can reach me on Twitter [@dreger](http://twitter.com/dreger), or through email. 
