@@ -9,12 +9,10 @@ A simple JFrame with one JButton which is hooked up to an ActionListener. Clicki
 ## DregerButton.java
 
 A Metro-style subclass of JButton. Makes instantiating and customizing colors really easy. For instance: 
-    
-    ```java
+
     aButton = new DregerButton("Hi!");
     aButton.setBounds(10, 10, 140, 40);
     aButton.setHoverColor(Color.RED);
-    ```
 
 ## Contribute
 
