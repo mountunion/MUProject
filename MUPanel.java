@@ -1,9 +1,7 @@
-/*
-A nice UMU project with sensible defaults 
-Hacked together with love by Kyle Dreger
-Version: 1.0.0
-URL: github.com/dreger/mu-project
-*/
+// A nice UMU project with sensible defaults 
+// Hacked together with love by Kyle Dreger
+// Version: 1.0.0
+// URL: github.com/dreger/mu-project
 
 import java.awt.*;
 import javax.swing.*;
@@ -25,7 +23,7 @@ public class MUPanel extends JPanel implements ActionListener{
         defaultLabel.setFont(new Font("Georgia", Font.PLAIN, 35));
         this.add(defaultLabel);
 
-        // Want better buttons? https://gist.github.com/dreger/4646029
+        // A demo button which, when clicked, outputs to the console
         demoButton.setBounds(50, 150, 200, 100);
         demoButton.setFont(new Font("Verdana", Font.PLAIN, 20));
         demoButton.addActionListener(this);
@@ -37,6 +35,9 @@ public class MUPanel extends JPanel implements ActionListener{
         super.paintComponent(g);      
     } 
 
+    // Using an IF statement to determine the source of the event
+    // allows us to have cleaner code when you start adding other
+    // elements to the panel. 
     public void actionPerformed(ActionEvent event) {
         Object source = event.getSource();
         if (source.equals(demoButton)) {

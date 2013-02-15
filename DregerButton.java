@@ -1,9 +1,7 @@
-/*
-Dreger Buttons - to make JButtons suck less
-Hacked together with love by Kyle Dreger
-Version: 1.0.0s
-URL: github.com/dreger/mu-project
-*/
+// Dreger Buttons - to make JButtons suck less
+// Hacked together with love by Kyle Dreger
+// Version: 1.0.0
+// URL: github.com/dreger/mu-project
 
 import java.awt.Color;
 import java.awt.Font;
