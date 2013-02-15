@@ -4,18 +4,19 @@ Introducing the new MU Project. If you're a student at the University of Mount U
 
 ## MUPanel.java
 
-A simple JFrame with one JButton which is hooked up to an ActionListener. Clicking the JButton produces output in the console. 
+A simple Frame with several UI elements already hooked up for you. 
 
 ![a simple frame](http://f.cl.ly/items/2I362P0M3z313z2e083G/mupanel.png)
 
 ## DregerButton.java
 
-A Metro-style subclass of JButton. Makes instantiating and customizing colors really easy. For instance: 
+A Metro-style subclass of JButton. They have a simple style, and nice aesthetic for any project. Also makes instantiating and customizing colors really easy. For instance: 
 
 ```java
-aButton = new DregerButton("Hi!");
-aButton.setBounds(10, 10, 140, 40);
-aButton.setHoverColor(Color.RED);
+demoDregerButton = new DregerButton("I'm BLUE!", Color.decode("#71b3c7"));
+demoDregerButton.setBounds(50, 220, 100, 50);
+demoDregerButton.addActionListener(this);
+this.add(demoDregerButton);
 ```
 
 ## Contribute / Problem? 
