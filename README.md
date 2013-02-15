@@ -6,7 +6,7 @@ Introducing the new MU Project. If you're a student at the University of Mount U
 
 A simple JFrame with one JButton which is hooked up to an ActionListener. Clicking the JButton produces output in the console. 
 
-![a simple frame](http://f.cl.ly/items/2h3r410h0V2E0v140x0A/mupanel.png)
+![a simple frame](http://f.cl.ly/items/2I362P0M3z313z2e083G/mupanel.png)
 
 ## DregerButton.java
 
