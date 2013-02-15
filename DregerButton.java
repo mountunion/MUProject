@@ -1,14 +1,15 @@
+/*
+Dreger Buttons - to make JButtons suck less
+Hacked together with love by Kyle Dreger
+Version: 1.0.0s
+URL: github.com/dreger/mu-project
+*/
 
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JButton;
-
-// DregerButton.java
-// Copyright Kyle Dreger 2012
-// To make JButtons suck less
-// https://gist.github.com/4646029
 
 public class DregerButton extends JButton implements MouseListener{
     Font defaultFont = new Font("Gill Sans MT",Font.BOLD,14);
