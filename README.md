@@ -13,10 +13,10 @@ A simple Frame with several UI elements already hooked up for you.
 A Metro-style subclass of JButton. They have a simple style, and nice aesthetic for any project. Also makes instantiating and customizing colors really easy. For instance: 
 
 ```java
-demoDregerButton = new DregerButton("I'm BLUE!", Color.decode("#71b3c7"));
-demoDregerButton.setBounds(50, 220, 100, 50);
-demoDregerButton.addActionListener(this);
-this.add(demoDregerButton);
+demoMetroButton = new MetroButton("I'm BLUE!", Color.decode("#71b3c7"));
+demoMetroButton.setBounds(50, 220, 100, 50);
+demoMetroButton.addActionListener(this);
+this.add(demoMetroButton);
 ```
 
 ## Contribute / Problem? 
