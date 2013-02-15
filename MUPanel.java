@@ -11,7 +11,7 @@ public class MUPanel extends Frame implements ActionListener{
     String windowTitle = "Your Java Program";
     JLabel demoLabel;
     JButton demoJButton;
-    DregerButton demoDregerButton, demoDregerButton2, demoDregerButton3;
+    MetroButton demoMetroButton, demoMetroButton2, demoMetroButton3;
     
     public MUPanel() {
         setLayout(null);
@@ -32,19 +32,19 @@ public class MUPanel extends Frame implements ActionListener{
         demoJButton.addActionListener(this);
         this.add(demoJButton);
         
-        // Demo DregerButtons
-        demoDregerButton = new DregerButton("I'm BLUE!", Color.decode("#71b3c7"));
-        demoDregerButton.setBounds(50, 220, 100, 50);
-        demoDregerButton.addActionListener(this);
-        this.add(demoDregerButton);
+        // Demo MetroButtons
+        demoMetroButton = new MetroButton("I'm BLUE!", Color.decode("#71b3c7"));
+        demoMetroButton.setBounds(50, 220, 100, 50);
+        demoMetroButton.addActionListener(this);
+        this.add(demoMetroButton);
         
-        demoDregerButton2 = new DregerButton("I'm RED!", Color.decode("#ce1611"));
-        demoDregerButton2.setBounds(170, 220, 100, 50);
-        this.add(demoDregerButton2);
+        demoMetroButton2 = new MetroButton("I'm RED!", Color.decode("#ce1611"));
+        demoMetroButton2.setBounds(170, 220, 100, 50);
+        this.add(demoMetroButton2);
         
-        demoDregerButton3 = new DregerButton("I'm GREEN!", Color.decode("#8a9b2f"));
-        demoDregerButton3.setBounds(290, 220, 120, 50);
-        this.add(demoDregerButton3);
+        demoMetroButton3 = new MetroButton("I'm GREEN!", Color.decode("#8a9b2f"));
+        demoMetroButton3.setBounds(290, 220, 120, 50);
+        this.add(demoMetroButton3);
     }
 
     // Using an IF statement to determine the source of the event
@@ -56,8 +56,8 @@ public class MUPanel extends Frame implements ActionListener{
         if (source.equals(demoJButton)) {
             System.out.println("demoJButton was clicked!");
         }
-        if (source.equals(demoDregerButton)) {
-            System.out.println("demoDregerButton was clicked!");
+        if (source.equals(demoMetroButton)) {
+            System.out.println("demoMetroButton was clicked!");
         }
     }
 

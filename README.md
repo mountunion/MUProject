@@ -8,7 +8,7 @@ A simple Frame with several UI elements already hooked up for you.
 
 ![a simple frame](http://f.cl.ly/items/2I362P0M3z313z2e083G/mupanel.png)
 
-## DregerButton.java
+## MetroButton.java
 
 A Metro-style subclass of JButton. They have a simple style, and nice aesthetic for any project. Also makes instantiating and customizing colors really easy. For instance: 
 

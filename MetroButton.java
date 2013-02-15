@@ -1,4 +1,4 @@
-// Dreger Buttons - to make JButtons suck less
+// Metro Buttons - to make JButtons suck less
 // Hacked together with love by Kyle Dreger
 // Version: 1.0.0
 // URL: github.com/dreger/mu-project
@@ -9,12 +9,12 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JButton;
 
-public class DregerButton extends JButton implements MouseListener{
+public class MetroButton extends JButton implements MouseListener{
     Font defaultFont = new Font("Gill Sans MT", Font.BOLD, 15);
     Color textColor = Color.decode("#ffffff");
     Color hoverColor;
    
-    public DregerButton(String s, Color bg) {
+    public MetroButton(String s, Color bg) {
         s = s.toUpperCase();
         this.setFocusPainted(false);
         this.setText(s);
