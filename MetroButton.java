@@ -10,10 +10,11 @@ import java.awt.event.MouseListener;
 import javax.swing.JButton;
 
 public class MetroButton extends JButton implements MouseListener{
-    Font defaultFont = new Font("Gill Sans MT", Font.BOLD, 15);
+    int defaultFontSize = 15;     
+    Font defaultFont = new Font("Gill Sans MT", Font.BOLD, defaultFontSize);
     Color textColor = Color.decode("#ffffff");
     Color hoverColor;
-   
+
     public MetroButton(String s, Color bg) {
         s = s.toUpperCase();
         this.setFocusPainted(false);
@@ -32,10 +33,16 @@ public class MetroButton extends JButton implements MouseListener{
         hoverColor = color; 
     }
 
+    public void setFontSize(int size) {
+        Font newDefaultFont = new Font("Gill Sans MT", Font.BOLD, size);
+        this.setFont(newDefaultFont);
+    }
+
     @Override public void mouseClicked(MouseEvent me) {}
     @Override public void mouseReleased(MouseEvent me) {}
     @Override public void mousePressed(MouseEvent me) {}
     
+    // Add a nice hover effect
     @Override
     public void mouseEntered(MouseEvent e) { this.setBackground(this.hoverColor); }
     @Override
