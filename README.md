@@ -23,6 +23,6 @@ this.add(demoMetroButton);
 
 I'd love to see MU Project grow into a rock solid set of sensible defaults for new Java projects. To help contribute, sign in with your GitHub account, fork the project, make changes, and submit a pull request. 
 
-If you encounter a problem with any of the code please [submit a new issue](https://github.com/dreger/mu-project/issues/new) and we can get working on it right away. 
+If you encounter a problem with any of the code please [submit a new issue](https://github.com/mount-union-socs/mu-project/issues/new) and we can get working on it right away. 
 
 You can reach me on Twitter [@dreger](http://twitter.com/dreger), or through email. 
