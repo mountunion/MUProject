@@ -7,7 +7,7 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class MUPanel extends Frame implements ActionListener{
+public class MUPanel extends Frame implements ActionListener, WindowListener{
     String windowTitle = "Your Java Program";
     JLabel demoLabel;
     JButton demoJButton;
@@ -17,6 +17,7 @@ public class MUPanel extends Frame implements ActionListener{
         setLayout(null);
         setPreferredSize(new Dimension(800, 600));
         setName(windowTitle);
+        addWindowListener(this);
         setBackground(Color.decode("#fafafa"));
 
         // Remove the following lines to clear the JPanel
@@ -70,4 +71,13 @@ public class MUPanel extends Frame implements ActionListener{
         muPanel.setBounds(100, 100, 800, 600);
         muPanel.setVisible(true);
     }
+
+    // Mouse and window listener classes, leave these be por favor
+    @Override public void windowClosing(WindowEvent event){ System.exit(0); }    
+    @Override public void windowClosed(WindowEvent event){ System.exit(0); }
+    @Override public void windowActivated(WindowEvent event){}
+    @Override public void windowDeactivated(WindowEvent event){}
+    @Override public void windowIconified(WindowEvent event){}
+    @Override public void windowDeiconified(WindowEvent event){}
+    @Override public void windowOpened(WindowEvent event){}
 } // end class
