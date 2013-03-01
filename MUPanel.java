@@ -1,7 +1,7 @@
 // A nice UMU project with sensible defaults 
 // Hacked together with love by Kyle Dreger
 // Version: 1.0.1
-// URL: github.com/dreger/mu-project
+// URL: github.com/mu-socs/mu-project
 
 import java.awt.*;
 import javax.swing.*;
