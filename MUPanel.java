@@ -8,10 +8,10 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class MUPanel extends Frame implements ActionListener, WindowListener{
-    String windowTitle = "Your Java Program";
-    JLabel demoLabel;
-    JButton demoJButton;
-    MetroButton demoMetroButton, demoMetroButton2, demoMetroButton3;
+    private String windowTitle = "Your Java Program";
+    private JLabel demoLabel;
+    private JButton demoJButton;
+    private MetroButton demoMetroButton, demoMetroButton2, demoMetroButton3;
     
     public MUPanel() {
         setLayout(null);
